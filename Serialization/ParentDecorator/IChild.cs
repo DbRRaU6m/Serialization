@@ -3,9 +3,9 @@
     /// <summary>
     /// Interface for assignment of parent references.
     /// </summary>
-    /// <typeparam name="P"></typeparam>
-    public interface IChild<P>
+    /// <typeparam name="T"></typeparam>
+    public interface IChild<T>
     {
-        P Parent { get; set; }
+        T Parent { get; set; }
     }
 }

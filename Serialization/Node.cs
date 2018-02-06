@@ -22,10 +22,7 @@
         [XmlIgnore]
         public Node Parent { get; set; }
 
-        public CollectionDecorator<Node> Children
-        { 
-            get; private set;
-        }
+        public readonly CollectionDecorator<Node> Children;
 
         public Node(string Id)
         {
