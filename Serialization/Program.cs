@@ -18,6 +18,8 @@ namespace Serialization
             var iSerialized = Serializer.Serialize(iNode1);
             var iDeserialized = Serializer.Deserialize<Node>(iSerialized);
 
+            // debug info
+
             var Lines = iDeserialized.Dump();
             foreach (var iLine in Lines)
             {
