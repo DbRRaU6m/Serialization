@@ -3,6 +3,10 @@
     using System.Collections.Generic;
     using System.Diagnostics;
 
+    /// <summary>
+    /// Base class for concrete collection decorators.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public abstract class CollectionDecorator<T> : ICollection<T>
     {
         private ICollection<T> Collection;
